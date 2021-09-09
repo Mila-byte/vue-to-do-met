@@ -1,0 +1,48 @@
+.header {
+    &__header {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--white-base);
+        background: var(--color-violet);
+        position: relative;
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__value {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    &__info--block {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__button {
+        width: 48px;
+        height: 48px;
+        background: var(--primary-green);
+        border-radius: 11px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        &:before {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            background: url("../assets/plus.svg");
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+}
